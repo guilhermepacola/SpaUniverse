@@ -11,6 +11,6 @@ router.add(404, "./pages/error.html")
 
 router.handle()
 window.onpopstate = () => router.handle()
-router.addEventListeners()
+window.route = () => router.route()
 
 
