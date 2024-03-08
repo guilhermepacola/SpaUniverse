@@ -40,13 +40,4 @@ export class Router {
 
     }
 
-    addEventListeners() {
-        document.getElementById('page').forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault()
-                this.route(event);
-            });
-        });
-    }
-
 }
