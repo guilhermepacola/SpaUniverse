@@ -92,7 +92,7 @@ h1{
     gap: 2.4rem;
 }
 
-.contentPageHome button{
+.contentPageHome a{
     padding: 1.2rem 3.2rem;
     background: transparent;
    
@@ -104,6 +104,8 @@ h1{
     font-size: 1.4rem;
     line-height: 2.4rem;
     font-weight: 700;
+
+    text-decoration: none;
 }
 
 .contentPages-Universe-Exploration{
