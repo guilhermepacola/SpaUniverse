@@ -39,14 +39,4 @@ export class Router {
         bodybg.classList.toggle(textValue)
 
     }
-
-    addEventListeners() {
-        document.getElementById('page').forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault()
-                this.route(event);
-            });
-        });
-    }
-
 }
