@@ -1,31 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-font-smooting:antialiased;
+    -webkit-font-smooting: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 
 
-:root{
+:root {
     /* Font-size */
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 
-    --nav-primary:#FFF;
+    --nav-primary: #FFF;
     --nav-secondary: #C4C4CC;
 
-    --tt-primary:#E1E1E6;
+    --tt-primary: #E1E1E6;
 
-    --bt-primary:#FFF;
-    --bd-button:#FFF;
+    --bt-primary: #FFF;
+    --bd-button: #FFF;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--tt-primary);
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     gap: 4.3rem;
@@ -40,15 +41,15 @@ nav ul li a {
 }
 
 nav ul li a:focus,
-nav ul li a:active{
+nav ul li a:active {
     text-decoration: none;
     color: var(--nav-primary);
     font-weight: bold;
 }
 
-nav ul li a:visited{
-text-decoration: none;
-color: var(--nav-secondary);
+nav ul li a:visited {
+    text-decoration: none;
+    color: var(--nav-secondary);
 }
 
 nav ul {
@@ -62,27 +63,31 @@ nav ul {
     line-height: 2.1rem;
 }
 
-.Home{
+.Home,
+.Error {
     background-image: url("../images/bgPageHome.png");
     background-size: 100% 100vh;
 }
-.Universe{
+
+.Universe {
     background-image: url("../images/bgPageUniverse.png");
     background-size: 100% 100vh;
 }
-.Exploration{
+
+.Exploration {
     background-image: url("../images/bgPageExploration.png");
     background-size: 100% 100vh;
 }
 
-h1{
+
+
+h1 {
     font-size: 4.8rem;
     line-height: 6rem;
     font-weight: 700;
 }
 
-
-.contentPageHome{
+.contentPageHome {
     display: grid;
     align-content: center;
     justify-content: center;
@@ -93,14 +98,14 @@ h1{
     gap: 2.4rem;
 }
 
-.contentPageHome a{
+.contentPageHome a {
     padding: 1.2rem 3.2rem;
     background: transparent;
-   
+
     border: 2px solid var(--bd-button);
     border-radius: 5px;
 
-    
+
     color: var(--bt-primary);
     font-size: 1.4rem;
     line-height: 2.4rem;
@@ -109,25 +114,41 @@ h1{
     text-decoration: none;
 }
 
-.contentPages-Universe-Exploration{
+.contentPages-Universe-Exploration {
     /* margin: 6.3rem 0 0 10rem; */
 
     padding: 2rem;
     text-align: justify;
 }
 
-.contentPages-Universe-Exploration p{
+.contentPages-Universe-Exploration p,
+.contentPageError p {
     font-size: 1.8rem;
     line-height: 2.8rem;
     margin-top: 1.6rem;
 }
 
+.contentPageError {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    height: 50vh;
+
+    gap: 2.4rem;
 
 
+}
 
+.contentPageError .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 80vw;
+}
 
-
-
-
-
-
+.contentPageError img {
+    width: 30%;
+}
