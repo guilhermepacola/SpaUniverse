@@ -1,0 +1,19 @@
+@media (min-width: 720px) {
+
+    nav{
+        padding: 4.0rem 0 4.0rem 7.2rem;
+    }
+    .contentPages-Universe-Exploration{
+ margin: 6.3rem 5rem;
+    }
+    
+    .contentPages-Universe-Exploration p{
+max-width: 65rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .contentPages-Universe-Exploration{
+        margin: 6.3rem 0 0 10rem;
+           }
+}

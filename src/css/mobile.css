@@ -32,6 +32,7 @@ nav{
     padding: 4.0rem 1rem;
 }
 
+
 nav ul li a {
     text-decoration: none;
     color: var(--nav-secondary);
@@ -119,8 +120,6 @@ h1{
     font-size: 1.8rem;
     line-height: 2.8rem;
     margin-top: 1.6rem;
-
-
 }
 
 
