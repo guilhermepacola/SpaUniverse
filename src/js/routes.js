@@ -33,7 +33,7 @@ export class Router {
         const bodybg = document.querySelector("body")
 
         if (route) {
-            titleDocument.innerText = `SpaUniverse/${textValue}`
+            titleDocument.innerText = `${textValue}`
         }
         bodybg.className = ""
         bodybg.classList.toggle(textValue)
