@@ -29,7 +29,7 @@ export class Router {
 
     changeTitle(route) {
         const titleDocument = document.getElementById('titleDocument')
-        const textValue = route.split("/SpaUniverse").pop().split(".")[0];
+        const textValue = route.split("/").pop().split(".")[0];
         const bodybg = document.querySelector("body")
 
         if (route) {
